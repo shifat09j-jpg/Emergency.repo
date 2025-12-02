@@ -78,7 +78,7 @@
 
     <div class="flex flex-row gap-8 justify-between items-center">
         <button class="btn bg-white w-[182px] rounded-12px "><i class="fa-regular fa-copy"></i> Copy</button>
-        <button class="btn bg-[#00a63e] text-white w-[182px] rounded-12px "><i class="fa-solid fa-phone"></i> Call</button>
+        <button class="call-btn bg-[#00a63e] text-white w-[182px] rounded-12px "  data-name="National Emergency Number" data-number="999"><i class="fa-solid fa-phone"></i> Call</button>
     </div>
 
         </div>
@@ -194,7 +194,7 @@
 
     <div class="flex flex-row gap-8 justify-between items-center">
         <button class="btn bg-white w-[182px] rounded-12px "><i class="fa-regular fa-copy"></i> Copy</button>
-        <button class="btn bg-[#00a63e] text-white w-[182px] rounded-12px "><i class="fa-solid fa-phone"></i> Call</button>
+        <button class="btn bg-[#00a63e] text-white w-[182px] rounded-12px " data-name="National Emergency Number" data-number="999"><i class="fa-solid fa-phone"></i> Call</button>
     </div>
 
         </div>
@@ -272,21 +272,21 @@
     </div>
     <div class="w-[400px] bg-white rounded-2xl shadow p-4" id="history-parent">
 
-    <div class="flex items-center justify-between " >
+    <div class="flex items-center justify-between mb-3" >
 
       
-        <div class="flex items-center gap-2">
+        <div  class="flex items-center gap-2 ">
             <i class="fa-regular fa-clock text-xl"></i>
-            <p class="font-semibold text-lg">Call History</p>
+            <p class="font-semibold text-lg ">Call History</p>
         </div>
 
        
-        <button class="bg-[#00A63E] text-white px-6 py-2 rounded-full font-medium">
+        <button id="clear-history" class="bg-[#00A63E] text-white px-6 py-2 rounded-full font-medium">
             Clear
         </button>
 
     </div>
-    <div id="history-container">
+    <div id="call-history" class="flex flex-col gap-3">
 
     </div>
 
